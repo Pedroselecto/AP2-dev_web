@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo_index.css">
+    <link rel="stylesheet" href="css/estilo_index.css">
     <link rel="icon" href="botafogo.svg">
-    <script type="text/javascript" src="sha256.js" defer></script>
-    <script type="text/javascript" src="login.js" defer></script>
+    <script type="text/javascript" src="js/sha256.js" defer></script>
+    <script type="text/javascript" src="js/login.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div id="cabecalho">
-        <h1 id="titulo">Elenco Bota Fogo 2024-1</h1>
+    <div id="pag_login">
+        <div id="cabecalho">
+            <h1 id="titulo">Elenco Botafogo 2024-1</h1>
+        </div>
+        <div id="div_login">
+            <input type="password" id="senha" placeholder="digite sua senha">
+            <button id="botao_login" onclick="verificaSenha()">Login</button>
+            <h4 id="libertadores">Senha: LIBERTADORES</h4>
+        </div>
     </div>
-    <div id="div_login">
-        <input type="password" id="senha" placeholder="digite sua senha">
-        <button id="botao_login" onclick="verificaSenha()">Login</button>
-    </div>
-
-    <h4 id="libertadores">Senha: LIBERTADORES</h4>
 </body>
 </html>

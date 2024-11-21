@@ -1,14 +1,24 @@
+body{
+    color: white;
+    font-family: "Lato", sans-serif;
+}
+
+a{
+    color: white;
+}
 
 #atleta{
     background-color: black;
     color: white;
     max-width: 50em;
+    margin: auto;
 }
 body{
     background-color: black;
 }
 #voltar{
     color: white;
+    margin: auto;
     display: flex;
     font-size: x-large;
     justify-content: center;
@@ -20,6 +30,6 @@ body{
         gap: 1em;
     }
     #voltar{
-        justify-content: left;
+        justify-content: center;
     }
 }

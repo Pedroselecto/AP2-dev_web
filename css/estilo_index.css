@@ -9,6 +9,7 @@
 
 #cabecalho{
     text-align: center;
+    font-family: "Cormorant", serif;
 }
 
 #libertadores{
@@ -19,6 +20,15 @@
 #titulo{
     text-decoration: underline;
 }
+
+#pag_login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+}
+
 
 @media screen and (max-width: 768px){
     #div_login{
@@ -37,4 +47,9 @@
         width: 20em;
         height: 2.5em;
     }
+    #pag_login{
+        display: flex;
+        flex-direction: column;
+    }
 }
+

@@ -1,3 +1,7 @@
+body{
+    font-family: "Lato", sans-serif;
+}
+
 #container h1{
     font-size: 20px;
     height: 2.5em;
@@ -9,10 +13,12 @@
 }
 
 #container img{
-    width: min-content;
+    width: 25em;
     overflow: hidden;
     object-fit: cover;
     height: min-content;
+    position: relative;
+    right: 8em;
 }
 
 #container {
@@ -22,6 +28,7 @@
     justify-content: center;
     max-width: 1400px;
     margin: auto;
+    width: 90%;
 }
 
 @media screen and (min-width: 768px) {
@@ -43,12 +50,16 @@
 }
 
 .cartao {
-    width: min-content;
+    width: 15em;
     background-color: gray;
     text-align: center;
     margin: auto;
     cursor: pointer;
     padding: 0.5em;
+    overflow: hidden;
+    height: 25em;
+    border: 5px solid black;
+    border-radius: 15px;
 }
 
 .botao_filtro{

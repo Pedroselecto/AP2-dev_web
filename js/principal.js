@@ -1,6 +1,7 @@
 const container = document.getElementById("container")
 let lista_atletas = []
 
+
 const pega_json = async (caminho) => {
     const resposta = await fetch(caminho);
     const dados = await resposta.json();
@@ -116,3 +117,9 @@ const logout = () => {
     window.location = "index.html"
 }
 
+if (sessionStorage.getItem("logado")) {
+} else {
+    document.body.innerHTML = "<h1>Usuário não logado</h1> <a href='index.html'>voltar</a>"
+
+
+}

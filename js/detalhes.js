@@ -79,13 +79,17 @@ const criaDetalhes = (atleta) => {
 
 }
 
-    if (sessionStorage.getItem("logado")){
-        pega_json(`https://botafogo-atletas.mange.li/2024-1/${id}`).then(
-            (retorno) => {   
+if (sessionStorage.getItem("logado")) {
+    pega_json(`https://botafogo-atletas.mange.li/2024-1/${id}`).then(
+        (retorno) => {
+            if (typeof (retorno.id) === "undefined") {
+                body.innerHTML = "<h1>Atleta não encontrado.</h1>"
+            } else {
                 criaDetalhes(retorno)
             }
- )} else {
-            console.log("n foi")
-            body.innerHTML = "<h1>Você precisa estar logado.</h1>"
+        }
+    )
+} else {
+    body.innerHTML = "<h1>Você precisa estar logado.</h1> <a href='index.html'>voltar</a>"
 }
 
