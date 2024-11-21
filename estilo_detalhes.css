@@ -1,0 +1,25 @@
+
+#atleta{
+    background-color: black;
+    color: white;
+    max-width: 50em;
+}
+body{
+    background-color: black;
+}
+#voltar{
+    color: white;
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    .pagina{
+        display: flex;
+        gap: 1em;
+    }
+    #voltar{
+        justify-content: left;
+    }
+}

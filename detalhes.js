@@ -38,6 +38,7 @@ const criaDetalhes = (atleta) => {
     const naturalidade = document.createElement("h3")
 
     const link = document.createElement("a")
+    link.id = "voltar"
 
     nome.innerHTML = atleta.nome;
     desc_atleta.appendChild(nome);
@@ -69,7 +70,7 @@ const criaDetalhes = (atleta) => {
     info.appendChild(desc);
 
     link.innerHTML = "Voltar"
-    link.href = `index.html`
+    link.href = `principal.html`
     body.appendChild(link)
 
     pagina.appendChild(foto)
@@ -81,7 +82,11 @@ const criaDetalhes = (atleta) => {
     if (sessionStorage.getItem("logado")){
         pega_json(`https://botafogo-atletas.mange.li/2024-1/${id}`).then(
             (retorno) => {
-                criaDetalhes(retorno)
+
+                if (typeof(retorno.id) === "undefined") {
+                    document.body.innerHTML = "<h1>Atleta não encontrado.</h1>"
+                } else {
+                criaDetalhes(retorno)}
     }
 )} else {
     body.innerHTML = "<h1>Você precisa estar logado.</h1>"
