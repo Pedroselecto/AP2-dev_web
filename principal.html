@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="principal.js" defer></script>
+    <link rel="icon" href="botafogo.svg">
+    <link rel="stylesheet" href="estilo_main.css">
+</head>
+<body>
+    <div id="div_logout">
+        <button id="logout" onclick="logout()">Logout</button>
+    </div>
+    <div id="seletor_categoria">
+        <select name="filtro" id="seletor_elenco">
+            <option value="all">Todos</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+        <button id="botao_all" class="botao_filtro">Todos</button>
+        <button  id="botao_masculino" class="botao_filtro">Masculino</button>
+        <button id="botao_feminino" class="botao_filtro">Feminino</button>
+    </div>
+    <div id="div_pesquisa">
+        <input type="text" id="barra_pesquisa" >
+    </div>
+    <div id="container"></div>
+
+</body>
+</html>

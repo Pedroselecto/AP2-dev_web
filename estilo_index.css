@@ -1,0 +1,27 @@
+#botao_login{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#div_login{
+    text-align: center;
+    width: min-content;
+}
+
+#cabecalho{
+    text-align: center;
+}
+
+#libertadores{
+    text-align: center;
+    margin: 0.5em;
+}
+
+#titulo{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px){
+
+
+}
