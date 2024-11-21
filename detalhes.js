@@ -81,17 +81,11 @@ const criaDetalhes = (atleta) => {
 
     if (sessionStorage.getItem("logado")){
         pega_json(`https://botafogo-atletas.mange.li/2024-1/${id}`).then(
-            (retorno) => {
-
-                if (typeof(retorno.id) === "undefined") {
-                    document.body.innerHTML = "<h1>Atleta não encontrado.</h1>"
-                } else {
-                criaDetalhes(retorno)}
-    }
-)} else {
-    body.innerHTML = "<h1>Você precisa estar logado.</h1>"
+            (retorno) => {   
+                criaDetalhes(retorno)
+            }
+ )} else {
+            console.log("n foi")
+            body.innerHTML = "<h1>Você precisa estar logado.</h1>"
 }
 
-//console.log(achaCookie("nome"))
-console.log(localStorage.getItem("id"))
-console.log(JSON.parse(localStorage.getItem("atleta")))

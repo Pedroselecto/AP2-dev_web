@@ -97,6 +97,9 @@ seletor_elenco.onchange = () => {
         retorno.forEach((atleta) => montaCard(atleta))}
     )}
 
+const opcao_fixa = document.getElementById("fixa")
+opcao_fixa.setAttribute("selected", "true")
+
 const barra_pesquisa = document.getElementById("barra_pesquisa")
 barra_pesquisa.oninput = () => {
     container.innerHTML = ""
