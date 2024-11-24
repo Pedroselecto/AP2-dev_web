@@ -1,2 +1,2 @@
 # AP2-dev_web
-AP2 de desenvolvimento web
+Link do github pages: https://pedroselecto.github.io/AP2-dev_web/
